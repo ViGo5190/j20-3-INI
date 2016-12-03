@@ -7,6 +7,8 @@ import java.util.HashMap;
 public interface Settings {
     String get(String key);
 
+    Iterable<String> keys();
+
     static Settings load(String path) throws IOException {
         return new SettingsImpl(path);
     }
@@ -25,5 +27,10 @@ class SettingsImpl extends HashMap<String, String> implements Settings {
     @Override
     public String get(String key) {
         return super.get(key);
+    }
+
+    @Override
+    public Iterable<String> keys() {
+        return keySet();
     }
 }

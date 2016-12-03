@@ -1,7 +1,7 @@
 package su.vigo;
 
 
-class Setting {
+public class Setting {
     final String key, value;
 
     public Setting(String key, String value) {

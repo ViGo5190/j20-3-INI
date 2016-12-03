@@ -8,5 +8,8 @@ public class Main {
         Settings settings = Settings.load("settings.ini");
         System.out.println(settings.get("username"));
 
+        for (String setting : settings.keys()) {
+            System.out.println(setting);
+        }
     }
 }
