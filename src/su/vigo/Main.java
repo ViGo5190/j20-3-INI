@@ -9,7 +9,7 @@ public class Main {
         System.out.println(settings.get("username"));
 
         for (String setting : settings.keys()) {
-            System.out.println(setting);
+            System.out.println(setting + " : " + settings.get(setting));
         }
     }
 }

@@ -44,7 +44,6 @@ public class IniLoader extends BufferedReader implements Iterable<Setting> {
             } catch (IOException e) {
                 return false;
             }
-
         }
 
         @Override
