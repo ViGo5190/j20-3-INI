@@ -6,6 +6,7 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         Settings settings = Settings.load("settings.ini");
+        System.out.println(settings.get("username"));
 
     }
 }
